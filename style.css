@@ -1,11 +1,11 @@
 body {
-    background-color: green;
-    color:red;
+    background-color: rgb(212, 238, 65);
+    color:rgb(97, 189, 231);
     margin: 0 0 auto;
 
 }
 section{
-    margin: 0 auto 200px;
+    margin: auto;
     width: 900px;
 
 }
