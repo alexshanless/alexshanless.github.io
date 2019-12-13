@@ -45,15 +45,15 @@ body{
   li:last-child{
     border: none;
     padding-right:0;
-  }
-  
+  } 
+
   a{
     color: #777777;
     text-decoration: none; 
     background-color: none;
   }
   
-  
+   
   main{
     width: 960px;
     margin: 40px auto;
