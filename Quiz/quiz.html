@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="./quizAssets/css/style.css">
+</head>
+<body>
+
+    <nav>
+        <span id="viewHighscores">View Highscores</span>
+        <span id="timerSpan">Timeleft: <span id="timer">0</span></span>
+    </nav>
+
+    <div id="startScreen">
+        <h2>Start Quiz</h2>
+        <button id="startQuiz">Start</button>
+    </div>
+
+    <div id="quizBox" class="hide">
+        <h2 id="question">Question goes here!</h2>
+        <button class="choice">Some Choice</button>
+        <button class="choice">Some Choice</button>
+        <button class="choice">Some Choice</button>
+        <button class="choice">Some Choice</button>
+    </div>
+    
+    <div id="highScores" class="hide">
+        <h2>High Scores!</h2>
+
+        <ul id="highscoresList">
+            <li>Some Scores</li>
+        </ul>
+    </div>
+
+
+    <script src="./quizAssets/js/questions.js"></script>
+    <script src="./quizAssets/js/quiz.js"></script>
+</body>
+</html>

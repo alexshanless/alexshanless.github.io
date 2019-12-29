@@ -1,0 +1,11 @@
+nav {
+    display: flex;
+}
+
+#timerSpan {
+    margin-left: auto;
+}
+
+.hide {
+    display: none;
+}
