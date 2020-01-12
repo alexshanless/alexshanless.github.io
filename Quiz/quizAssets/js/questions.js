@@ -9,6 +9,16 @@ var questions = [
       choices: ["quotes", "curly brackets", "parentheses", "square brackets"],
       answer: "parentheses"
     },
+   {
+
+    title: "What does HTML stands for?",
+    choices: ['hyper Text Markup Language',
+     'hyperlinks and Text Markup Language',
+     'Home Tool Markup Language',
+    'Hyena Thinks of Making Lunch'],
+    answer: 'hyper Text Markup Language'
+   },
+  
     ///etc.
   ];
   

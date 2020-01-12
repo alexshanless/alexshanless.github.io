@@ -10,7 +10,7 @@
 <body>
 
     <nav>
-        <span id="viewHighscores">View Highscores</span>
+        <a href="./highscores.html" id="viewHighscores">View Highscores</a>
         <span id="timerSpan">Timeleft: <span id="timer">0</span></span>
     </nav>
 
@@ -27,15 +27,19 @@
         <button class="choice">Some Choice</button>
     </div>
     
-    <div id="highScores" class="hide">
-        <h2>High Scores!</h2>
+    <!-- <div id="answer">
+        <p>Correct!</p>
+    </div> -->
 
-        <ul id="highscoresList">
-            <li>Some Scores</li>
-        </ul>
+    <div id="yourscore" class="hide">
+        <h2>Your score</h2>
+        <div id="displayscore"></div>
+        <p>save?</p>
+            In: <input id='initials' type="text" name="LastName" value=""><br>
+           <button id='submit1' value="Submit"> Submit</button>
+    
     </div>
-
-
+    
     <script src="./quizAssets/js/questions.js"></script>
     <script src="./quizAssets/js/quiz.js"></script>
 </body>
