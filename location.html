@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet">
 </head>
+
 <body>
 
     <header>
@@ -26,16 +27,15 @@
             </div>
         </nav>
     </header>
+<main>
+<h1 style="text-align: center;">Location</h1>
+<div id="map"></div>
+</main>
 
-    <main>
-        <form action="" class="form">
-            <p><input type="text" name="name" class="feedback-input" placeholder="Name"></p>
-            <p><input type="email" name="email" class="feedback-input" placeholder="Email"></p>
-            <p><textarea name="text" id="comment" placeholder="Message"></textarea></p>
-            <input type="submit" value="Submit" class="button-submit">  
-            <div class="ease"></div>  
-        </form>
-    </main>
+
+
+
+
 
 
 
@@ -63,7 +63,16 @@
     </footer>
 
 
-    <script src="script.js"></script>
-</body>
-
-</html>
+    <script>
+        var map;
+        function initMap() {
+            var uluru = {lat: 47.610378, lng: -122.200676};
+  // The map, centered at Uluru
+          var map = new google.maps.Map(
+          document.getElementById('map'), {zoom: 8, center: uluru});
+  // The marker, positioned at Uluru
+          var marker = new google.maps.Marker({position: uluru, map: map});
+        }
+      </script>
+      <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAM4QZgvA_d1ylXO6ww4aP-6m2NzVa6oPM&callback=initMap"
+      async defer></script>

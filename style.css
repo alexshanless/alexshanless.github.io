@@ -1,11 +1,241 @@
-body {
-    background-color: rgb(212, 238, 65);
-    color:rgb(97, 189, 231);
-    margin: 0 0 auto;
-
+* {
+	margin: 0;
+	padding: 0;
 }
-section{
-    margin: auto;
-    width: 900px;
+a {
+	text-decoration: none;
+	list-style: none;
+}
 
+html,
+body {
+	font-family: "Raleway", sans-serif;
+	height: 100%;
+}
+
+.logo {
+	background: black;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+}
+
+.graphiclogo {
+	padding: 5px;
+	max-width: 100px;
+	box-sizing: border-box;
+}
+
+nav {
+	margin: auto;
+	width: 800px;
+	height: 100px;
+}
+.topnav {
+	background-color: white;
+	font-size: 14px;
+	margin-top: 40px;
+}
+.topnav a {
+	color: black;
+	text-align: center;
+	padding: 14px 16px;
+	font-size: 15px;
+}
+.topnav a:hover {
+	border-bottom: 2px solid black;
+}
+
+.topnav .icon {
+	display: none;
+}
+
+.mw-100 {
+	max-width: 100%;
+}
+.advantages-container {
+	display: flex;
+	justify-content: center;
+}
+.container {
+	min-height: 100%;
+}
+#main {
+	overflow: auto;
+	padding-bottom: 100px;
+}
+.advantages {
+	padding-top: 40px;
+	padding-bottom: 40px;
+	width: 70%;
+	display: flex;
+	justify-content: space-between;
+	text-align: center;
+	flex-wrap: wrap;
+}
+
+.advantages-item {
+	width: 30%;
+}
+
+.social img {
+	margin-left: 10px;
+	margin-bottom: 10px;
+}
+.social img:hover {
+	background: grey;
+	border-radius: 50%;
+}
+
+footer {
+	width: 100%;
+	height: auto;
+	background: black;
+	margin: 0 auto;
+	text-align: center;
+	padding-top: 25px;
+	clear: both;
+}
+
+footer a {
+	color: white;
+	font-size: 14px;
+	margin-left: 10px;
+}
+
+footer nav a:hover {
+	border-bottom: 1px solid white;
+}
+footer p {
+	color: white;
+}
+.gallery {
+	width: 80%;
+	margin: auto;
+	display: flex;
+	flex-wrap: wrap;
+	margin-bottom: 50px;
+}
+
+.photo-itm {
+	width: 25%;
+}
+.photo-itm img {
+	box-sizing: border-box;
+	max-width: 100%;
+	opacity: 0.7;
+}
+.photo-itm img:hover {
+	opacity: 1;
+}
+
+@media screen and (max-width: 768px) {
+	.topnav a:not(:first-child) {
+		display: none;
+	}
+	.topnav a.icon {
+		float: right;
+		margin-top: -17px;
+		display: block;
+		color: black;
+	}
+
+	nav {
+		width: 100%;
+		height: 50px;
+	}
+	.topnav.responsive {
+		position: relative;
+	}
+	.topnav.responsive a.icon {
+		position: absolute;
+		right: 0;
+		top: 0;
+	}
+	.topnav.responsive a {
+		float: none;
+		display: block;
+		text-align: left;
+	}
+	.advantages-item {
+		width: 65%;
+	}
+	.photo-itm {
+		width: 45%;
+		margin-left: 10px;
+	}
+}
+
+@media screen and (max-width: 420px) {
+	.advantages {
+		flex-direction: column;
+	}
+	.advantages-item {
+		width: 100%;
+	}
+	.project {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+	.gallery {
+		width: auto;
+		margin: auto;
+	}
+	.photo-itm {
+		width: 70%;
+		margin: 0 auto;
+	}
+}
+
+#map {
+	width: 100%;
+	height: 500px;
+}
+.form {
+	width: 50%;
+	margin: 50px auto;
+}
+.feedback-input {
+	color: black;
+	font-weight: 300;
+	font-size: 14px;
+	line-height: 22px;
+	background-color: white;
+	padding: 13px;
+	margin-bottom: 10px;
+	width: 100%;
+	border: 0px solid;
+	border-bottom: 1px solid #000;
+	box-sizing: border-box;
+}
+textarea {
+	width: 100%;
+	height: 150px;
+	resize: vertical;
+}
+.button-submit {
+	float: left;
+	width: 100%;
+	border: 0px solid transparent;
+	cursor: pointer;
+	background-color: black;
+	color: white;
+	font-style: 18px;
+	padding-top: 22px;
+	padding-bottom: 22px;
+	transition: all 0.3s;
+	margin-top: -4px;
+	font-weight: 300;
+}
+.button-submit:hover {
+	background-color: #fff;
+	color: black;
+	border: 1px solid black;
+}
+.ease {
+	width: 0;
+	height: 100px;
+	background-color: grey;
+	transition: 0.3s ease;
 }
